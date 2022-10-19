@@ -1,0 +1,26 @@
+.find_adventure_card{
+  .card-image{
+    height: 80px;
+    width: auto;
+  }
+}
+
+.adv_loc_thumbnail_placeholder{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.adv_loc_thumbnail{
+  width: 50px;
+  border-radius: $border-radius-snapp;
+  margin-right: 5px;
+}
+
+.chips_placeholder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}

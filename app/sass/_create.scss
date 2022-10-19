@@ -1,0 +1,80 @@
+#dropdown1{
+    overflow-y: visible;
+    width: auto !important;
+}
+
+#descriptionText{
+    background: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#icon_prefix1{
+    font-size: header;
+}
+//////////////////////////////////////////
+
+#overviewMap{
+    height: 300px;
+}
+
+.addButtonContainer{
+    z-index: 100;
+    position: relative;
+    height: 90px;
+    .fixed-action-btn{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        .option{
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: $border-radius-snapp;
+        }
+    }
+}
+
+.modal-close-nav {
+    display: flex;
+    justify-content: center;
+    max-width: 54px !important;
+    border-radius: 50px;
+}
+
+.listview{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    #list-container{
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+#submit_adventure{
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#save_adventure{
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.flex_container_create_adv{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .flex_box_create_adv{
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+#addExistingSnappModal{
+    width: 90%;
+}

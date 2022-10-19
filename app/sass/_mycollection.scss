@@ -1,0 +1,30 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.parent>div {
+  flex: 0 50%;
+}
+
+.child {
+  width: 100%;
+  //flex-shrink: 1;
+  justify-content: center;
+}
+
+@media (max-width: 350px) {
+  .parent {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+  }
+
+  .child {
+    width: 100%;
+    //flex-shrink: 1;
+    justify-content: center;
+  }
+}

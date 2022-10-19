@@ -1,0 +1,175 @@
+//include chickenfont
+@font-face {
+  font-family: "ChickenQuiche";
+  src: url('../fonts/Chicken_Quiche.ttf') format("truetype");
+}
+
+.border-treatment{
+  border-radius: $border-radius-snapp;
+}
+
+.center-flex-ux{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+html{
+  overflow: hidden;
+}
+body{
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.padding_body_section{
+  height: 100%;
+  margin: 0;
+}
+
+nav{
+  .brand-logo{
+    font-family: "ChickenQuiche";
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.tabs .tab a{
+  i{
+    line-height: 48px;
+    padding-right: 5px;
+  }
+}
+
+.sidenav{
+  .background{
+    background-color: $primary-color;
+  }
+  .profile_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .edit-button{
+      background-color: transparent;
+    }
+    i{
+      color: white !important;
+    }
+  }
+
+
+  .header{
+    color: $primary-color;
+    i{
+      color: $primary-color !important;
+    }
+  }
+  .suboption{
+    padding-left: 90px;
+    color: #3c3c3c;
+  }
+}
+
+.bottomNav {
+  position: fixed;
+  bottom: 0px;
+  z-index: 200;
+}
+
+.halfway-fab {
+  bottom: 20px !important;
+  margin-left: -28px;
+  left: 50%;
+}
+
+.cam {
+  background-color: #e2f3d9ce !important;
+  //background-color: #60A53B !important;
+}
+.cam i {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.menus {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menus li {
+  list-style: none;
+  width: 20%;
+  //line-height: 28px;
+}
+.menus li a {
+  width: 100%;
+  text-align: center;
+  //font-size: 14px;
+  font-size: 3vw;
+  line-height: 14px;
+  //word-break: break-word;
+  //display: block;
+  //tansition: 1s;
+  //position: relative;
+}
+
+@media screen and (min-width: 460px) {
+  .menus li a {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 14px;
+    height: 50px !important;
+  }
+}
+
+.menus li a i {
+  //width: 100%;
+  height: 28px;
+  line-height: 28px !important;
+}
+
+.header_info{
+  color:$primary-color;
+}
+
+.paragraph_info{
+  color:black;
+  line-height: 20px !important;
+}
+
+/*.menus li a i span {
+  display: block;
+  font-size: 12px !important;
+}*/
+
+//.slider {
+//  width: 50px;
+//  height: 50px;
+//  position: absolute;
+//  left: 50%;
+//  background: #202034;
+//  transform: translateX(-50%);
+//  top: -35%;
+//  transition: 1.5s;
+//  border-radius: 50%;
+//  z-index: 9;
+//}
+//.gap {
+//  //width: 50px;
+//  //height: 50px;
+//  //position: absolute;
+//  //left: 50%;
+//  transform: translateX(-50%);
+//  top: -35%;
+//  transition: 1.5s;
+//  border-radius: 50%;
+//}

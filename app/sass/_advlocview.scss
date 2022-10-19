@@ -1,0 +1,22 @@
+.adv_loc_next-prev_placeholder{
+  position: fixed;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  .chip{
+    background-color: white;
+    font-size: 20px !important;
+    color: $primary-color !important;
+    height: 35px;
+    border-radius: $border-radius-snapp !important;
+  }
+  a{
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

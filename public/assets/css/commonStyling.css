@@ -1,0 +1,38 @@
+
+
+span.field-icon {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.mTop10 {
+    margin-top: 10px
+}
+
+.mBottom10 {
+    margin-top: 10px
+}
+
+#profileDisplay { display: block; height: 25%; width: 25%; margin: 0px auto; border-radius: 40%; }
+.img-placeholder {
+    width: 25%;
+    color: white;
+    height: 25%;
+    background: black;
+    opacity: .7;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+.img-placeholder h4 {
+    margin-top: 40%;
+    color: white;
+}

@@ -1,0 +1,278 @@
+$height_create_placeholder: 350px;
+.create_placeholder {
+  position: relative;
+  //background-color: #0D47A1;
+  height: $height_create_placeholder;
+  width: 90%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  border-radius: $border-radius-snapp;
+}
+
+.create_placeholder .button_placeholder {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: auto;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 3;
+  //background-color: red;
+}
+
+.create_placeholder #cropsnapp {
+  display: none;
+}
+
+.create_placeholder .confirm_button {
+  display: none;
+}
+
+.create_placeholder .cropsnapp_placeholder {
+  overflow: hidden;
+  height: 100%;
+  background-image: url(images/flower.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: $primary-color-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: $border-radius-snapp;
+
+  .text {
+    font-size: 50px;
+    font-weight: bolder;
+  }
+}
+
+.create_placeholder.ready #cropsnapp {
+  display: block;
+  border-radius: $border-radius-snapp !important;
+}
+
+.create_placeholder.ready .cropsnapp_placeholder {
+  display: none;
+}
+
+.create_placeholder.ready .confirm_button {
+  display: block !important;
+}
+
+.create_placeholder.ready .photo_button {
+  background-color: $primary-color-light !important;
+
+  i {
+    color: darkgrey;
+  }
+}
+
+.close-create_snapp_modal {
+  display: flex;
+  justify-content: center;
+  max-width: 54px !important;
+  border-radius: 50px;
+}
+
+.confirm_loader:active {
+  animation: spin 750ms linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+//snapp modal
+
+.modal-no-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title_field {
+    width: 90%;
+  }
+
+  .description_field {
+    width: 90%;
+  }
+}
+
+.create_header_wrapper {
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  $total_height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 90%;
+  height: $total_height - 10px;
+  background-color: $primary-color-light;
+  border-bottom-color: $primary-color;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 5px;
+
+  .create_header_text {
+    height: $total_height - 10px;
+    width: 70%;
+    line-height: $total_height - 10px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    overflow: hidden;
+  }
+
+  .create_header_number {
+    height: $total_height;
+    width: $total_height;
+    border-radius: 50%;
+    background-color: $primary-color;
+    text-align: center;
+    line-height: $total_height;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }
+}
+
+.plant_name_wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-top: 20px;
+
+  #plant_name {
+    text-align: left;
+    width: 60%;
+    margin: 10px 0px 20px !important;
+  }
+}
+#plant_percentage {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+
+  .number_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+
+    .number {
+      height: auto;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .number_small_text {
+      text-align: center;
+      height: auto;
+      font-size: 10px;
+      font-weight: lighter;
+    }
+  }
+}
+
+$snapp_width: 70%;
+.imageselector_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 600px;
+
+  .imageselector {
+    display: flex;
+    max-width: 90%;
+
+    .snapp {
+      width: $snapp_width;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .suggestions {
+      //background-color: #0D47A1;
+      width: 100% - $snapp_width;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: stretch;
+
+      .suggestion {
+        position: relative;
+        flex-grow: 1;
+        margin: 7px 5px 6px;
+        background-color: lightgrey;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 85%;
+          height: auto;
+        }
+
+        .suggestion_link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          //background-color: #0c5460;
+          z-index: 5;
+        }
+      }
+    }
+  }
+}
+
+.create_snapp_map_wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
+  #create_snapp_map {
+    width: 100%;
+    height: 100%;
+  }
+  #choose_snapp_map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.easy-button-locate {
+  font-size: 30px;
+}
+
+#add_info{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+

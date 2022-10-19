@@ -1,0 +1,34 @@
+<div class="col s12 m7">
+    <div href="#" class="card horizontal find_snapp_card">
+        <a href="${base_url}/snapp/view_adv/${item.id_adv}" class="find_snapp_link waves-effect"></a>
+        <div class="card-stacked">
+            <div class="card-content">
+                <span class="card-title">${item.title}</span>
+                <p class="snapp_descripiton">${item.description}</p>
+                <!--Inner card-->
+                <div class="card horizontal find_snapp_card">
+                    <div class="card-image">
+                           <img class="find_snapp_list_image" src="${item.pic}">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <span class="card-title">${item.title_loc}</span>
+                            <p class="snapp_descripiton">${item.description_loc}.</p>
+                        </div>
+                        <div class="card-action">
+                            <div class="chip">First of many</div>
+                        </div>
+                    </div>
+                </div>
+                <!--End inner card-->
+            </div>
+            <div class="card-action">
+                <div class="chip">${item.Distance} km</div>
+                <div>
+                    <a href='javascript:void(0)'> <i data-title="${item.title}" data-id="${item.id_adv}" class="material-icons card-share">share</i> </a>
+                    <a href='javascript:void(0)'> <i data-id="${item.id_adv}" class="material-icons card-favorite">favorite_border</i> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
